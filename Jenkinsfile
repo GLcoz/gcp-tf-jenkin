@@ -29,9 +29,11 @@ pipeline {
             }
         }
 
-	    stage('Manual Approval') {
+	    stage('Approval') {
             steps {
-                input "Approve?"
+                script {
+                    input message: 'Do you approve this deployment?', ok: 'Yes'
+                }
             }
         }
 	    
