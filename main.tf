@@ -5,7 +5,7 @@ resource "google_storage_bucket" "my-bucket" {
   force_destroy            = true
   public_access_prevention = "enforced"
 }
-#
+
 resource "google_storage_bucket" "my-bucket2" {
   name                     = "tt-githubdemo-bucket-002"
   project                  = "devops-project-427122"
@@ -13,5 +13,3 @@ resource "google_storage_bucket" "my-bucket2" {
   force_destroy            = true
   public_access_prevention = "enforced"
 }
-#
-### dummy
